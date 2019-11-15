@@ -14,7 +14,7 @@ function closeModals(){
     }
   })
 }
-console.log(closeButtons)
+
 if (closeButtons) {
   Array.from(closeButtons).map(button => {
     button.addEventListener('click', closeModals)
