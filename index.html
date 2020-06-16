@@ -32,10 +32,27 @@
 
 <body>
   <style>
+    :root {
+      --brennonYellow: #edc728
+    }
+    a {
+      color: var(--brennonYellow);
+    }
+    .navbar-item:hover {
+      color: var(--brennonYellow) !important;
+      background-color:  rgba(0,0,0,.03) !important;
+    }
     .hero-body {
       display: flex;
       padding-top: 10rem !important;
       padding-bottom: 10rem !important;
+    }
+    .modal a {
+      color: #4a4a4a;
+    }
+    .modal a:hover {
+      color: var(--brennonYellow);
+      background-color: rgba(0,0,0,.03) !important;
     }
 
     #intro {
@@ -47,7 +64,7 @@
       height: 475px;
       width: auto;
       border-radius: .3em;
-      margin-right: 25%;
+      margin-right: 35%;
     }
 
     #burger {
@@ -82,7 +99,7 @@
 
     @media(max-width: 1550px) {
       img {
-        margin-right: 15%;
+        margin-right: 25%;
       }
     }
 
@@ -93,7 +110,7 @@
     }
     @media(max-width: 910px) {
       img {
-        height: 325px;
+        height: 355px;
       }
     }
   </style>
