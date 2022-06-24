@@ -11,12 +11,12 @@
     http-equiv="X-UA-Compatible"
     content="ie=edge"
   >
-  <!-- bulma -->
+  <!-- fontawesome -->
   <script
     defer
     src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
   ></script>
-  <!-- fontawesome -->
+  <!-- bulma -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
@@ -33,14 +33,17 @@
 <body>
   <style>
     :root {
-      --brennonYellow: #edc728
+      --brennonYellow: #edc728;
+      --mainGray: #4a4a4a;
     }
     a {
       color: var(--brennonYellow);
     }
     .navbar-item:hover {
       color: var(--brennonYellow) !important;
-      background-color:  rgba(0,0,0,.03) !important;
+      background-color: rgba(0,0,0,.79) !important;
+      font-weight: 500;
+      margin: 0 -1px;
     }
     .hero-body {
       display: flex;
@@ -48,7 +51,7 @@
       padding-bottom: 10rem !important;
     }
     .modal a {
-      color: #4a4a4a;
+      color: var(--mainGray);
     }
     .modal a:hover {
       color: var(--brennonYellow);
@@ -156,7 +159,7 @@
           <br> Hammock Lover
           <br> Reader
           <br> Learner
-          <br> Birkenstock Wearer
+          <br> Chaco Wearer
           <br>
           <strong>Builder</strong>
           <br>
@@ -201,7 +204,7 @@
         I worked Tech Support for a local ISP, 
         where probably the most important thing I learned was 
         how to watch ASCII Star Wars through Telnet. 
-        Through the next few years I worked various tech jobs, 
+        Over the next few years I worked various tech jobs, 
         and I loved it, 
         but I didn't want to just <strong>use</strong> these tools. 
         I wanted to <strong>make</strong> them.
@@ -212,7 +215,7 @@
       <p class="is-size-4 is-size-6-mobile">
         I learned JavaScript and CSS, React, and Node.js. 
         I learned all about Bash scripts and HTTP and SQL. 
-        For work I've learned TypeScript, Angular, AWS, Python and Django. 
+        For work I've learned TypeScript, Angular, AWS, Python and Django, Ruby and Rails. 
         In my free time (hah) I've built a Linux box to host my own projects 
         (including my custom Plex/SMB server).
         <strong>Tech makes me tick.&trade;*</strong>
@@ -224,9 +227,8 @@
         <strong>tech is totally useless if we forget what it's for</strong>. 
         I love tech because with it, I can solve real problems that 
         real people face every day. 
-        I can automate keeping track of tax write-offs so 
-        my father-in-law doesn't have to 
-        (coming soon to an iPhone near you!). 
+        I can automate onboarding management so that
+        busy PM's don't have to email their clients a million times a day.
         I can host movies from my house so 
         it doesn't suck so bad when something isn't on Netflix 
         (<a
@@ -234,10 +236,13 @@
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           class="link"
         >#firstWorldProbs</a>).
+        I can configure AWS to handle all my deployments so
+        nobody has to spend time trudging through server logs.
       </p>
       <br>
       <p class="is-size-4 is-size-6-mobile">
         All in all, I love tech, 
+        I love people,
         and I love to solve problems.
         <strong>So what are we going to solve together?</strong>
       </p>
