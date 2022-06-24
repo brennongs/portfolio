@@ -3,36 +3,36 @@ const backgrounds = document.querySelectorAll('.modal-background');
 const closeButtons = document.querySelectorAll('.modal-close');
 const resources = document.querySelector('#resources');
 const contact = document.querySelector('#contact');
-const rModal = document.querySelector('#resources-modal');
-const cModal = document.querySelector('#contact-modal');
-
-function closeModals(){
-  modals.forEach(({ classList }) => {
-    classList.remove('is-active');
-  });
-}
+const resourcesModal = document.querySelector('#resources-modal');
+const contactModal = document.querySelector('#contact-modal');
+const burger = document.querySelector('#burger');
 
 if (closeButtons.length) {
-  [...closeButtons, ...backgrounds].forEach(el => {
-    el.addEventListener('click', closeModals);
+  [...closeButtons, ...backgrounds].forEach(element => {
+    element.addEventListener('click', closeModals);
   });
 }
 
 resources.addEventListener('click', () => {
-  rModal.classList.add('is-active');
+  resourcesModal.classList.add('is-active');
 });
 
 contact.addEventListener('click', () => {
-  cModal.classList.add('is-active');
+  contactModal.classList.add('is-active');
 });
 
 //mobile
-if(document.querySelector('#burger')){
-  const burger = document.querySelector('#burger');
+if(burger) {
   const menu = document.querySelector('#navbar-menu');
 
   burger.addEventListener('click', ({ target }) => {
     target.classList.toggle('is-active');
     menu.classList.toggle('is-active');
+  });
+}
+
+function closeModals() {
+  modals.forEach(({ classList }) => {
+    classList.remove('is-active');
   });
 }
