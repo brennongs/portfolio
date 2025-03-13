@@ -33,17 +33,16 @@
 <body>
   <style>
     :root {
-      --brennonYellow: #edc728;
+      --brennonYellow: rgba(255, 0, 0);
       --mainGray: #4a4a4a;
+      --hoverGray: rgba(0,0,0,.03);
     }
     a {
       color: var(--brennonYellow);
     }
     .navbar-item:hover {
       color: var(--brennonYellow) !important;
-      background-color: rgba(0,0,0,.79) !important;
-      font-weight: 500;
-      margin: 0 -1px;
+      background-color: var(--hoverGray) !important;
     }
     .hero-body {
       display: flex;
@@ -55,7 +54,7 @@
     }
     .modal a:hover {
       color: var(--brennonYellow);
-      background-color: rgba(0,0,0,.03) !important;
+      background-color: var(--hoverGray) !important;
     }
 
     #intro {
@@ -232,7 +231,6 @@
         it doesn't suck so bad when something isn't on Netflix 
         (<a
           target="_blank"
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           class="link"
         >#firstWorldProbs</a>).
         I can build a marketplace to facilitate networking between healthcare facilities and nurse clinicians to ease the pain of America's nursing shortage.
